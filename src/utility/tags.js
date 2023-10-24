@@ -1,4 +1,4 @@
-const { isEmpty } = require('../../../lib/object');
+const { isEmpty } = require('../../lib/object');
 
 const wrapWithTags = (text, tagName, props = {}) => {
   const prefix = openTag(tagName, props);
@@ -19,8 +19,8 @@ const openTag = (name, props = {}) => {
 };
 
 const selfClosingTag = (name, props = {}) => {
-  return halfOpenTag(name, props) + '/>'
-}
+  return halfOpenTag(name, props) + '/>';
+};
 
 const closeTag = (name) => {
   return `</${name}>`;

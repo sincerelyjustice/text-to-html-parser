@@ -1,4 +1,4 @@
-const { getWhitespace } = require("../../../../lib/string");
+const { getWhitespace } = require('../../../lib/string');
 
 const makeEmphasisTransformations = () => {
   const bold = {

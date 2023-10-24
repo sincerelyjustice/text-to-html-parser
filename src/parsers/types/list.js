@@ -1,4 +1,4 @@
-const { getWhitespace } = require('../../../../lib/string');
+const { getWhitespace } = require('../../../lib/string');
 const { getTransformation } = require('../../utility/transformations');
 const { openTag, closeTag } = require('../../utility/tags');
 

@@ -1,5 +1,8 @@
-const { globalRegex } = require('../../../../lib/string');
-const { escapeInlineCharacters, unescapedReplace } = require('../../utility/escape');
+const { globalRegex } = require('../../../lib/string');
+const {
+  escapeInlineCharacters,
+  unescapedReplace,
+} = require('../../utility/escape');
 const { wrapPortion, replaceFirstLine } = require('../../utility/portions');
 const { wrapWithTags } = require('../../utility/tags');
 const { getTransformation } = require('../../utility/transformations');

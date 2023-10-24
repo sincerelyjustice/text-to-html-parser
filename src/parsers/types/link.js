@@ -1,5 +1,5 @@
 const path = require('path');
-const { globalRegex } = require('../../../../lib/string');
+const { globalRegex } = require('../../../lib/string');
 const { wrapWithTags, selfClosingTag } = require('../../utility/tags');
 const { getTransformation } = require('../../utility/transformations');
 const { unescapedReplace } = require('../../utility/escape');

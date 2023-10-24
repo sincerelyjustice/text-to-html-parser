@@ -1,4 +1,4 @@
-const { globalRegex } = require('../../../lib/string');
+const { globalRegex } = require('../../lib/string');
 const { getInlineTransformingCharacters } = require('./transformations');
 
 const isEscaped = (text, substringLocation) => {

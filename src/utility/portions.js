@@ -1,4 +1,4 @@
-const { isEmpty } = require('../../../lib/string');
+const { isEmpty } = require('../../lib/string');
 const { wrapWithTags, openTag, closeTag } = require('./tags');
 
 const getPortions = (lines) => {

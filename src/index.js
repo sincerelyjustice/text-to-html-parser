@@ -1,4 +1,4 @@
-const { pipe } = require('../../lib/function');
+const { pipe } = require('../lib/function');
 const {
   addHeadings,
   addParagraphs,
