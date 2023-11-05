@@ -35,7 +35,7 @@ const wrapPortion = (portion, tag) => {
     const lastLine = portion[portionSize - 1];
     return [
       openTag(tag) + firstLine,
-      portion.slice(1, portionSize - 1),
+      ...portion.slice(1, portionSize - 1),
       lastLine + closeTag(tag),
     ];
   }
