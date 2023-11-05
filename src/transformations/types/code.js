@@ -4,7 +4,7 @@ const makeCodeTransformations = () => {
   const inlineTransformation = {
     name: 'code.inline',
     tag: 'code',
-    regex: /`(.*?)`/,
+    regex: /`(.+?)`/,
     specialChars: ['`'],
     delimiter: whitespace(1),
   };
