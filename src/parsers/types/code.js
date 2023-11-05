@@ -1,4 +1,4 @@
-const { globalRegex } = require('../../../lib/string');
+const { globalRegex } = require('js-toolkit/string');
 const {
   escapeInlineCharacters,
   unescapedReplace,

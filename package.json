@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "parse": "node parse.js"
+  },
+  "dependencies": {
+    "js-toolkit": "sincerelyjustice/js-toolkit#production"
   }
 }

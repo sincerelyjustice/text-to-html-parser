@@ -1,4 +1,4 @@
-const { matchesAny } = require('../../../lib/string');
+const { matchesAny } = require('js-toolkit/string');
 const { transformations } = require('../../transformations');
 const { getTransformation } = require('../../utility/transformations');
 const { isPortionTransformation } = require('../../utility/transformations');

@@ -1,10 +1,10 @@
-const { range } = require('../../../lib/array');
-const { getWhitespace } = require('../../../lib/string');
+const { range } = require('js-toolkit/array');
+const { whitespace } = require('js-toolkit/string');
 
 const makeListTransformations = () => {
   const indentation = 2;
   const getRegex = (startChar) =>
-    new RegExp(`^((?:${getWhitespace(indentation)})*)${startChar} (.+)$`);
+    new RegExp(`^((?:${whitespace(indentation)})*)${startChar} (.+)$`);
   const orderedTransformation = {
     name: 'ordered.list',
     tag: 'ol',

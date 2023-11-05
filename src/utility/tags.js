@@ -1,4 +1,4 @@
-const { isEmpty } = require('../../lib/object');
+const { isEmptyObj } = require('js-toolkit/object');
 
 const wrapWithTags = (text, tagName, props = {}) => {
   const prefix = openTag(tagName, props);
@@ -8,7 +8,7 @@ const wrapWithTags = (text, tagName, props = {}) => {
 
 const halfOpenTag = (name, props = {}) => {
   let tag = `<${name}`;
-  if (!isEmpty(props)) {
+  if (!isEmptyObj(props)) {
     tag += ' ' + writeProps(props);
   }
   return tag;

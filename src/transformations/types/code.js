@@ -1,4 +1,4 @@
-const { getWhitespace } = require('../../../lib/string');
+const { whitespace } = require('js-toolkit/string');
 
 const makeCodeTransformations = () => {
   const inlineTransformation = {
@@ -6,7 +6,7 @@ const makeCodeTransformations = () => {
     tag: 'code',
     regex: /`(.*?)`/,
     specialChars: ['`'],
-    delimiter: getWhitespace(1),
+    delimiter: whitespace(1),
   };
   const blockTransformation = {
     name: 'code.block',

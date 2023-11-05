@@ -1,4 +1,4 @@
-const { removeDuplicates } = require('../../lib/array');
+const { removeDuplicates } = require('js-toolkit/array');
 const { transformations } = require('../transformations');
 
 const getTransformation = (name) => {

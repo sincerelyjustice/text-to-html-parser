@@ -1,4 +1,4 @@
-const { isEmpty } = require('../../lib/string');
+const { isEmptyString } = require('js-toolkit/string');
 const { wrapWithTags, openTag, closeTag } = require('./tags');
 
 const getPortions = (lines) => {
@@ -6,7 +6,7 @@ const getPortions = (lines) => {
   let currentPortion = [];
 
   for (const line of lines) {
-    const isBlankLine = isEmpty(line.trim());
+    const isBlankLine = isEmptyString(line.trim());
     if (!isBlankLine) {
       currentPortion.push(line);
     } else if (currentPortion.length) {

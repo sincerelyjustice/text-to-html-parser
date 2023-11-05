@@ -1,4 +1,4 @@
-const { getWhitespace } = require('../../../lib/string');
+const { whitespace } = require('js-toolkit/string');
 
 const makeLinkTransformations = () => {
   const linkTransformation = {
@@ -6,14 +6,14 @@ const makeLinkTransformations = () => {
     tag: 'a',
     regex: /(?<!\!)\[(.*?)\]\((.*?)\)/,
     specialChars: ['[', ']', '(', ')'],
-    delimiter: getWhitespace(1),
+    delimiter: whitespace(1),
   };
   const imageLinkTransformation = {
     name: 'image',
     tag: 'img',
     regex: /\!\[(.*?)\]\((.*?)\)/,
     specialChars: ['!', '[', ']', '(', ')'],
-    delimiter: getWhitespace(1),
+    delimiter: whitespace(1),
   };
   return [linkTransformation, imageLinkTransformation];
 };

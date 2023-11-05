@@ -1,4 +1,4 @@
-const { globalRegex } = require('../../../lib/string');
+const { globalRegex } = require('js-toolkit/string');
 const { unescapedReplace } = require('../../utility/escape');
 const { wrapWithTags } = require('../../utility/tags');
 const { getTransformation } = require('../../utility/transformations');

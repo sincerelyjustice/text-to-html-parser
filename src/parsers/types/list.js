@@ -1,4 +1,4 @@
-const { getWhitespace } = require('../../../lib/string');
+const { whitespace } = require('js-toolkit/string');
 const { getTransformation } = require('../../utility/transformations');
 const { openTag, closeTag } = require('../../utility/tags');
 
@@ -26,7 +26,7 @@ const parsePortion = (portion, transformation) => {
   };
 
   const indentTag = (tag, multiplier) => {
-    return getWhitespace(multiplier * transformation.indentation) + tag;
+    return whitespace(multiplier * transformation.indentation) + tag;
   };
 
   const addItem = (content) => {
