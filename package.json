@@ -1,0 +1,7 @@
+{
+  "name": "text-to-html-parser",
+  "version": "1.0.0",
+  "scripts": {
+    "parse": "node parse.js"
+  }
+}
